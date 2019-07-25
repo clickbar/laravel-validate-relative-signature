@@ -1,0 +1,42 @@
+{
+  "name": "clickbar/laravel-validate-relative-signature",
+  "description": "Middleware for validating relative signed url requests.",
+  "type": "library",
+  "license": "MIT",
+  "homepage": "https://github.com/clickbar/laravel-validate-relative-signature",
+  "authors": [
+    {
+      "name": "Adrian",
+      "email": "ah@clickbar.rocks"
+    }
+  ],
+  "require": {
+    "php": "^7.3",
+    "illuminate/support": "^5.7"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^3.8",
+    "phpunit/phpunit": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Clickbar\\ValidateRelativeSignature\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Clickbar\\ValidateRelativeSignature\\Tests\\": "test/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit",
+    "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Clickbar\\ValidateRelativeSignature\\ValidateRelativeSignatureServiceProvider"
+      ]
+    }
+  }
+}
