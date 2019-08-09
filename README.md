@@ -5,7 +5,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/clickbar/laravel-validate-relative-signature.svg?style=flat-square)](https://scrutinizer-ci.com/g/clickbar/laravel-validate-relative-signature)
 [![Total Downloads](https://img.shields.io/packagist/dt/clickbar/laravel-validate-relative-signature.svg?style=flat-square)](https://packagist.org/packages/clickbar/laravel-validate-relative-signature)
 
-In Laravel you can use the signed middleware URL to sign URLs for activation links etc.. There's also a undocumented relative parameter which makes it possible to sign **relative** URLs.
+In Laravel you can use the [signed middleware URL](https://laravel.com/docs/5.8/urls#signed-urls) to sign URLs for activation links etc.. There's also a undocumented relative parameter which makes it possible to sign **relative** URLs.
 
 This is useful if you are using Laravel just as an API and host it somewhere else than your frontend. You can still use your pretty frontend URLs instead of those of the API.
 
