@@ -6,8 +6,14 @@
   "homepage": "https://github.com/clickbar/laravel-validate-relative-signature",
   "authors": [
     {
-      "name": "Adrian",
-      "email": "ah@clickbar.rocks"
+      "name": "Adrian Hawlitschek",
+      "email": "ah@clickbar.rocks",
+      "role": "Developer"
+    },
+    {
+      "name": "Alexander von Studnitz",
+      "email": "avs@clickbar.rocks",
+      "role": "Developer"
     }
   ],
   "require": {
@@ -20,17 +26,20 @@
   },
   "autoload": {
     "psr-4": {
-      "Clickbar\\ValidateRelativeSignature\\": "src/"
+      "Clickbar\\ValidateRelativeSignature\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Clickbar\\ValidateRelativeSignature\\Tests\\": "test/"
+      "Clickbar\\ValidateRelativeSignature\\Tests\\": "tests"
     }
   },
   "scripts": {
     "test": "vendor/bin/phpunit",
     "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+  },
+  "config": {
+    "sort-packages": true
   },
   "extra": {
     "laravel": {
